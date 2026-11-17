@@ -1,0 +1,13 @@
+{
+  "name": "money-coach",
+  "owner": {
+    "name": "Otávio Felix"
+  },
+  "plugins": [
+    {
+      "name": "money-coach",
+      "source": "./",
+      "description": "Conselheiro financeiro pessoal para brasileiros, forte em investimentos e estratégia, que anota tudo numa pasta da pessoa e não cede a decisões financeiras ruins."
+    }
+  ]
+}

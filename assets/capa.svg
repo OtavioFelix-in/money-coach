@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 600" width="1280" height="600" role="img" aria-labelledby="t d">
+  <title id="t">money-coach</title>
+  <desc id="d">Mascote laranja de terno azul-marinho e gravata dourada, segurando uma maleta, com moedas subindo e um gráfico crescendo atrás. Ao lado, o título money-coach, a frase "Um conselheiro financeiro dentro do Claude Code" e uma conversa em que a pessoa pede "só concorda comigo" e o coach responde "não concordo, olha a conta".</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C111B"/>
+      <stop offset="1" stop-color="#18222F"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#F2C14E" stop-opacity=".26"/>
+      <stop offset="1" stop-color="#F2C14E" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 H0 V40" fill="none" stroke="#9FB2C8" stroke-width="1" opacity=".07"/>
+    </pattern>
+    <linearGradient id="mala" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8A5A34"/>
+      <stop offset="1" stop-color="#6A4226"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    text{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+    .bob{animation:bob 3.4s ease-in-out infinite}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    .shadow{transform-box:fill-box;transform-origin:center;animation:shadow 3.4s ease-in-out infinite}
+    @keyframes shadow{0%,100%{transform:scaleX(1);opacity:.34}50%{transform:scaleX(.84);opacity:.2}}
+    .blink{transform-box:fill-box;transform-origin:center;animation:blink 4.6s infinite}
+    @keyframes blink{0%,91%,100%{transform:scaleY(1)}94%{transform:scaleY(.08)}}
+    .wave{transform-box:view-box;transform-origin:92px 268px;animation:wave 2.6s ease-in-out infinite}
+    @keyframes wave{0%,60%,100%{transform:rotate(0)}70%{transform:rotate(-14deg)}80%{transform:rotate(10deg)}90%{transform:rotate(-8deg)}}
+    .swing{transform-box:view-box;transform-origin:340px 300px;animation:swing 3.4s ease-in-out infinite}
+    @keyframes swing{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+    .halo{animation:pulse 3s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}
+    .coin{opacity:0;animation:coin 4.5s ease-out infinite}
+    .c2{animation-delay:1.5s}.c3{animation-delay:3s}
+    @keyframes coin{0%{opacity:0;transform:translateY(0)}15%{opacity:1}80%{opacity:.9}100%{opacity:0;transform:translateY(-150px)}}
+    .chart{stroke-dasharray:900;stroke-dashoffset:900;animation:draw 6s ease-in-out infinite}
+    @keyframes draw{0%{stroke-dashoffset:900}45%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:0;opacity:0}}
+    .b1,.b2{opacity:0;animation:fala 8s infinite}
+    .b2{animation-delay:1.4s}
+    @keyframes fala{0%{opacity:0;transform:translateY(8px)}6%,82%{opacity:1;transform:translateY(0)}92%,100%{opacity:0}}
+    .in{opacity:0;animation:rise .9s cubic-bezier(.2,.8,.2,1) forwards}
+    @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}.in,.b1,.b2,.c1{opacity:1!important}.chart{stroke-dashoffset:0}}
+  </style>
+
+  <rect width="1280" height="600" rx="28" fill="url(#bg)"/>
+  <rect width="1280" height="600" rx="28" fill="url(#grid)"/>
+  <ellipse cx="320" cy="300" rx="330" ry="260" fill="url(#glow)" class="halo"/>
+
+  <!-- gráfico crescendo atrás do mascote -->
+  <path class="chart" d="M40 420 L120 392 L190 404 L270 340 L340 356 L420 270 L500 236 L580 150" fill="none" stroke="#4ADE80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity=".35"/>
+
+  <ellipse class="shadow" cx="300" cy="500" rx="230" ry="14" fill="#000"/>
+
+  <g transform="translate(0 60)">
+    <g class="bob">
+      <!-- pernas (calça) e sapatos -->
+      <g fill="#1C2B45">
+        <rect x="98" y="330" width="34" height="62" rx="9"/>
+        <rect x="150" y="330" width="34" height="62" rx="9"/>
+        <rect x="216" y="330" width="34" height="62" rx="9"/>
+        <rect x="268" y="330" width="34" height="62" rx="9"/>
+      </g>
+      <g fill="#0B0F16">
+        <rect x="94" y="380" width="44" height="16" rx="8"/>
+        <rect x="146" y="380" width="44" height="16" rx="8"/>
+        <rect x="212" y="380" width="44" height="16" rx="8"/>
+        <rect x="264" y="380" width="44" height="16" rx="8"/>
+      </g>
+
+      <!-- braço acenando (manga do terno) -->
+      <g class="wave">
+        <path d="M92 268 Q 54 248 52 200" stroke="#1C2B45" stroke-width="28" fill="none" stroke-linecap="round"/>
+        <circle cx="52" cy="194" r="15" fill="#D97757"/>
+      </g>
+
+      <!-- corpo -->
+      <rect x="80" y="160" width="240" height="180" rx="20" fill="#D97757"/>
+      <rect x="80" y="160" width="240" height="26" rx="13" fill="#E88A69" opacity=".55"/>
+
+      <!-- olhos -->
+      <g fill="#1B120F">
+        <rect class="blink" x="140" y="196" width="26" height="44" rx="7"/>
+        <rect class="blink" x="234" y="196" width="26" height="44" rx="7"/>
+      </g>
+
+      <!-- terno -->
+      <path d="M80 252 H320 V320 Q320 340 300 340 H100 Q80 340 80 320 Z" fill="#1C2B45"/>
+      <path d="M160 252 L200 316 L240 252 Z" fill="#F4F1EA"/>
+      <path d="M150 252 L200 330 L176 252 Z" fill="#14203A"/>
+      <path d="M250 252 L200 330 L224 252 Z" fill="#14203A"/>
+      <rect x="191" y="252" width="18" height="12" rx="3" fill="#E0A82E"/>
+      <path d="M193 263 H207 L213 298 L200 312 L187 298 Z" fill="#F2C14E"/>
+      <circle cx="200" cy="326" r="3.5" fill="#0B0F16"/>
+      <rect x="262" y="270" width="30" height="5" rx="2" fill="#F2C14E" opacity=".85"/>
+
+      <!-- braço com a maleta -->
+      <g class="swing">
+        <path d="M312 270 Q 340 290 340 318" stroke="#1C2B45" stroke-width="28" fill="none" stroke-linecap="round"/>
+        <circle cx="340" cy="322" r="15" fill="#D97757"/>
+        <path d="M318 338 Q318 318 340 318 Q362 318 362 338" fill="none" stroke="#4A2E19" stroke-width="8" stroke-linecap="round"/>
+        <rect x="282" y="334" width="116" height="84" rx="12" fill="url(#mala)" stroke="#4A2E19" stroke-width="3"/>
+        <rect x="282" y="364" width="116" height="6" fill="#4A2E19" opacity=".55"/>
+        <rect x="300" y="358" width="16" height="16" rx="3" fill="#F2C14E"/>
+        <rect x="364" y="358" width="16" height="16" rx="3" fill="#F2C14E"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- moedas subindo da maleta -->
+  <g font-weight="800" font-size="15" text-anchor="middle">
+    <g class="coin c1"><circle cx="330" cy="370" r="17" fill="#F2C14E" stroke="#B98A1E" stroke-width="3"/><text x="330" y="375" fill="#6A4A0A">R$</text></g>
+    <g class="coin c2"><circle cx="372" cy="380" r="14" fill="#F2C14E" stroke="#B98A1E" stroke-width="3"/><text x="372" y="385" fill="#6A4A0A" font-size="12">R$</text></g>
+    <g class="coin c3"><circle cx="300" cy="384" r="12" fill="#F2C14E" stroke="#B98A1E" stroke-width="3"/><text x="300" y="388" fill="#6A4A0A" font-size="10">R$</text></g>
+  </g>
+
+  <g>
+    <text class="in" x="640" y="214" font-size="84" font-weight="800" fill="#FFFFFF" style="animation-delay:.3s">money<tspan fill="#F2C14E">-coach</tspan></text>
+    <text class="in" x="644" y="276" font-size="26" fill="#DDE5EE" style="animation-delay:.6s">Um conselheiro financeiro dentro do Claude Code.</text>
+    <text class="in" x="644" y="314" font-size="22" fill="#9FB0C2" style="animation-delay:.75s">Forte em investimentos. Não concorda com loucura.</text>
+
+    <g class="b1">
+      <rect x="840" y="342" width="290" height="46" rx="16" fill="#243246"/>
+      <text x="862" y="372" font-size="19" fill="#DDE5EE">só concorda comigo, vai</text>
+    </g>
+    <g class="b2">
+      <rect x="644" y="398" width="436" height="46" rx="16" fill="#3A2E10" stroke="#F2C14E" stroke-width="2"/>
+      <text x="666" y="428" font-size="19" font-weight="700" fill="#F7D98A">não concordo. olha a conta: R$ 684 de juros</text>
+    </g>
+
+    <g class="in" style="animation-delay:1.25s">
+      <rect x="644" y="470" width="168" height="44" rx="22" fill="#1E2A3A"/>
+      <text x="728" y="499" font-size="20" font-weight="700" text-anchor="middle" fill="#D5E0EC">investimentos</text>
+    </g>
+    <g class="in" style="animation-delay:1.4s">
+      <rect x="824" y="470" width="150" height="44" rx="22" fill="#1E2A3A"/>
+      <text x="899" y="499" font-size="20" font-weight="700" text-anchor="middle" fill="#D5E0EC">estratégia</text>
+    </g>
+    <g class="in" style="animation-delay:1.55s">
+      <rect x="986" y="470" width="150" height="44" rx="22" fill="#1E2A3A"/>
+      <text x="1061" y="499" font-size="20" font-weight="700" text-anchor="middle" fill="#D5E0EC">sua pasta</text>
+    </g>
+    <text class="in" x="644" y="556" font-size="18" fill="#7F90A3" style="animation-delay:1.8s">plugin para o Claude Code, em português do Brasil, v0.1.0</text>
+  </g>
+</svg>

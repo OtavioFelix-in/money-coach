@@ -1,0 +1,9 @@
+{
+  "name": "money-coach",
+  "version": "0.1.0",
+  "description": "Conselheiro financeiro pessoal para brasileiros: controle de gastos, dívidas, reserva de emergência e, principalmente, investimentos e estratégia financeira. Anota tudo numa pasta da própria pessoa e não concorda com decisão financeira ruim só porque a pessoa insiste.",
+  "author": {
+    "name": "Otávio Felix"
+  },
+  "keywords": ["finanças pessoais", "investimentos", "orçamento", "dívidas", "reserva de emergência", "brasil"]
+}
